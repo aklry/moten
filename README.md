@@ -1,29 +1,7 @@
-# moten
+# 项目名称：低代码平台
 
-This template should help get you started developing with Vue 3 in Vite.
+## 技术栈
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Compile and Minify for Production
-
-```sh
-pnpm build
-```
+- 前端：Vue + Element UI + pinia
+- 包管理工具：pnpm
+- 架构：monorepo

@@ -32,7 +32,8 @@
     "switch:vue3": "vue-demi-switch 3 vue3",
     "preview": "vite preview",
     "clear": "rimraf dist ./node_modules",
-    "clear:dist": "rimraf dist"
+    "clear:dist": "rimraf dist",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "@vue/composition-api": "^1.7.2",

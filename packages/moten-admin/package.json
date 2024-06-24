@@ -1,5 +1,5 @@
 {
-  "name": "moten-admin",
+  "name": "@moten/admin",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "lint": "eslint . --ext .vue,.js,.ts,.tsx, --fix",
     "format": "prettier --write src/"
   },
   "dependencies": {

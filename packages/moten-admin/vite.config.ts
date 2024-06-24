@@ -12,19 +12,19 @@ export default defineConfig({
     vue(),
     AutoImport({
       resolvers: [ElementPlusResolver()],
-      dts: fileURLToPath(new URL('./types/auto-imports.d.ts', import.meta.url))
+      dts: fileURLToPath(new URL('./types/auto-imports.d.ts', import.meta.url)),
     }),
     Components({
       resolvers: [ElementPlusResolver()],
       dirs: ['src/components'],
       dts: fileURLToPath(new URL('./types/components.d.ts', import.meta.url)),
       extensions: ['vue'],
-      deep: true
-    })
+      deep: true,
+    }),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
 })

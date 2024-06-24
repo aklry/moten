@@ -14,7 +14,16 @@
     "ui:build": "pnpm -F @moten/ui build",
     "clear": "rimraf --glob ./node_modules ./packages/**/node_modules ./packages/**/dist",
     "play:vue3": "pnpm -F @moten/ui build && pnpm -F @moten/playground-vue3 dev",
-    "play:vue2": "pnpm -F @moten/ui build && pnpm -F @moten/playground-vue2 serve"
+    "play:vue2": "pnpm -F @moten/ui build && pnpm -F @moten/playground-vue2 serve",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "pnpm -F @moten/admin lint"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-vinyl"
+    }
   },
   "pnpm": {
     "packageExtensions": {
@@ -31,6 +40,12 @@
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "commitizen": "^4.3.0",
+    "cz-vinyl": "^2.5.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "rimraf": "^5.0.7"
   }
 }

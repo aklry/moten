@@ -1,0 +1,14 @@
+// packages/moten-editor/src/assets/styles/mixins/_index.scss
+
+:root {
+  --border-radius: 6px;
+}
+
+:root {
+  --el-border-radius-base: var(--border-radius);
+  --el-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.06);
+}
+
+.el-popper {
+  border-radius: var(--border-radius);
+}
